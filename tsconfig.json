@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "target": "es6",
+        "outDir": "./out",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "newLine": "LF",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    },
+    // If a segment of a glob pattern includes only * or .*,
+    // then only files with supported extensions are included
+    // (e.g. .ts, .tsx, and .d.ts by default with .js and .jsx if allowJs is set to true).
+    "include": [
+        "./src/**/*"
+    ]
+}

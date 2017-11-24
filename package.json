@@ -1,0 +1,49 @@
+{
+  "name": "minichain",
+  "version": "0.1.0",
+  "description": "A PoC cryptocurrency implementation written to illustrate the basic components of a Proof-of-Work based, public blockchain technology.",
+  "main": "index.js",
+  "repository": "git@github.com:kodebox-io/minichain.git",
+  "author": "Kwang Yul Seo <kseo@kodebox.io>",
+  "license": "MIT",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "importSort": {
+    ".js, .jsx, .es6, .es": {
+      "parser": "babylon",
+      "style": "module"
+    },
+    ".ts, .tsx": {
+      "parser": "typescript",
+      "style": "module"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "import-sort-cli": "^3.3.0",
+    "import-sort-parser-babylon": "^3.2.0",
+    "import-sort-parser-typescript": "^3.2.0",
+    "import-sort-style-module": "^3.0.0",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.3",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "@types/node": "^8.0.53",
+    "bn.js": "^4.11.8",
+    "create-hash": "^1.1.3",
+    "keccak": "^1.3.0",
+    "secp256k1": "^3.3.1"
+  }
+}
